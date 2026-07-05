@@ -12,7 +12,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 from sklearn.metrics import f1_score
-df=pd.read_csv(r"C:\Users\mrutu\Downloads\train_u6lujuX_CVtuZ9i.csv")
+df=pd.read_csv("train_u6lujuX_CVtuZ9i.csv")
 # Text columns -> Mode
 df["Gender"].fillna(df["Gender"].mode()[0],inplace=True)
 df["Self_Employed"].fillna(df["Self_Employed"].mode()[0],inplace=True)
